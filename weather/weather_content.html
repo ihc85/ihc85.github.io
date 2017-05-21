@@ -4,14 +4,18 @@
 	<meta charset="utf-8">
 	<title>Franklin, ID | Weather </title>
 	<meta name="description" content="Weather for Franklin, ID">
-	<meta name="viewport" content="width=414">
+	<meta name="viewport" content="width=320, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="franklin_screen.css">
 </head>
+
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Sansita');
+</style>
 
 <body>
 	<header>
 		<div class="title">
-			<h1><span>&#9856;</span><span>&#9861;</span> Feeling Lucky?</h1>
+			<h1><span id="icon1">&#9856;</span><span id="icon2">&#9861;</span> Feeling Lucky?</h1>
 			<h1>Local Weather</h1>
 		</div>
 	</header>
@@ -29,16 +33,16 @@
 	<main>
 		<section class="overview">
 			<h1>Franklin, ID</h1>
-			<img src="/weather/images/sunlight.jpg" width="300" alt="Current conditions background picture">
 			<article>
 				<b id="temp">74</b>
-				
-				<div><p id="icon">&#9728;</p>
-				<b id="hi-low">90/66</b>
-					
+
+				<div>
+					<p id="icon">&#9728;</p>
+					<b id="hi-low">90/66</b>
+
 					<p id="summary">Sunny</p>
-				
-					</div>
+
+				</div>
 			</article>
 		</section>
 		<section class="cur_conditions">
@@ -48,7 +52,7 @@
 				<table>
 					<tr>
 						<td class="left">
-							Wind
+							Wind:
 						</td>
 						<td>
 							1 - 5
@@ -56,17 +60,17 @@
 					</tr>
 					<tr>
 						<td class="left">
-							<b>Precipitation</b>
+							Precipitation:
 						</td>
 						<td>
 
-							0in
+							0 in
 						</td>
 					</tr>
 				</table>
 			</section>
 		</section>
-		
+
 		<section class="hourly">
 			<img src="images/sun.jpg" alt="Picture for hourly forecast" width="50">
 			<h1>Hourly Forecast</h1>

@@ -218,7 +218,7 @@ small {
 	
 	small {
 		font-size: 10px;
-		align-content: flex-end;
+		align-self: flex-end;
 	}
 }
 

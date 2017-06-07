@@ -31,6 +31,12 @@ body {
 	/* Changed background color and font size */
 }
 
+header {
+	/* Make the header stretch to fit the viewport */
+	display: flex;
+	flex: 1 100%;
+}
+
 main {
 	display: flex;
 	flex-flow: column nowrap;
@@ -53,7 +59,7 @@ nav {
 	left: 0;
 	right: 0;
 	justify-content: space-around;
-	font-size: 10px;
+	font-size: 20px;
 	/* Make the position of the nav bar fixed, specify line height, stretch to width of viewport, and justify links content for even spacing */
 }
 
@@ -69,7 +75,7 @@ nav {
 }
 
 footer {
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	/* add space below footer to make room for nav bar */
 	font-size: 20px;
 }
@@ -148,6 +154,7 @@ h6 {
 main {
 	display: flex;
 	max-height: 500px;
+	align-items: stretch;
 }
 
 .overview {
@@ -160,29 +167,28 @@ main {
 }
 
 .cur_conditions {
-	background-image: image("images/lightning.jpg");
 	margin: .2em auto;
 	border: 1px solid;
 	border-radius: 5px;
-	height: 150px;
+	background-color: rgba(200,200,200,.6);
 }
 
-nav a:link {
+li a:link {
 	text-decoration: none;
 	color: #47556F;
 }
 
-nav a:visited {
+li a:visited {
 	text-decoration: none;
 	color: #47556F;
 }
 
-nav a:hover {
+li a:hover {
 	text-decoration: none;
 	color: #E7EF61;
 }
 
-nav a:active {
+li a:active {
 	text-decoration: none;
 	color: #A6D8DB;
 }
@@ -227,4 +233,10 @@ footer {
 	small {
 		font-size: 10px;
 		align-self: flex-end;
+	}
+	
+	nav ul {
+	display: flex;
+	justify-content: space-around;
+		
 	}

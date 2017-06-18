@@ -1,0 +1,79 @@
+window.onload = function () {
+	var element = document.getElementById('alcoveLogo');
+	element.style.opacity = .2;
+
+	var elements = document.getElementsByClassName('servicesBtn');
+
+	for (var i = 0; i < elements.length; i++) {
+		if (i % 2 == 0) {
+			elements[i].style.color = 'rgb(0, 106, 255)';
+		}
+	}
+
+	var moreElements = document.getElementsByTagName('h2');
+
+	for (var i = 0; i < moreElements.length; i++) {
+		moreElements[i].style.borderColor = 'rgb(255,0,0)';
+		moreElements[i].style.borderWidth = '2px';
+		moreElements[i].style.borderStyle = 'solid';
+		moreElements[i].style.backgroundColor = 'rgba(255, 0, 0, .2)';
+	}
+
+	var element3 = document.querySelector(".navigation > li:nth-child(3) > a");
+	element3.style.color = 'rgb(255,0,0)';
+	var elements2 = document.querySelectorAll(".navigation > li:nth-child(even) > a");
+	for (var i = 0; i < elements2.length; i++) {
+		elements2[i].style.color = 'rgb(255, 0, 0)';
+	}
+	
+	
+	
+
+	
+		// changes color for class servicesBtn
+		$('.servicesBtn').css('color', '#FFF');
+		// changes color for class button
+		$('button').css('border', '1px solid red');
+		// changes color using "h2" element selector
+		$('h2').css('border', '1px solid red');
+		// changes border for all inputs with name "nameVal"
+		$('input[name="nameVal"]').css('border', '1px solid red');
+		// interesting: changes border for all inputs without the name "phoneNum"
+		$('input[name!="phoneNum"]');
+		// changes color for all inputs containing "Num" in their name attributes
+		$('input[name*="Num"]').css('border', '1px solid red');
+		// changes border for all inputs with name attributes ending in "Val"
+		$('input[name$="Val"]').css('border', '1px solid red');
+		// changes background color for all list items that are first
+		$('li:first').css('background-color', 'rgb(248, 95, 95)');
+		// changes background color for all list items that are last
+		$('li:last').css('background-color', 'rgb(248, 95, 95)');
+		// changes background color for all list items with an odd index (2nd list item: index "1", etc.)
+		$('li:odd').css('background-color', 'rgb(248, 95, 95)');
+		// changes background for all list items with index of 3
+		$('li:eq(3)').css('background-color', 'rgb(248, 95, 95)');
+		
+		// to select parent's css
+		$('li:eq(2)').parent().css('opacity', '.3');
+		
+		// changes background for all first list items
+		$('li:first-of-type').css('background-color', 'rgb(248, 95, 95)');
+		// changes background for all single list items
+		$('li:only-of-type').css('background-color', 'rgb(248, 95, 95)');
+		
+	// for the closest div tag
+	$('.servicesBtn').closest('div').css('background-color', 'rgba(255, 0, 0, 0.2)');
+		
+		// interesting: changes background for all list items and their parents containing the value "Crush"
+		$('li:contains("Crush")').css('background-color', 'rgb(248, 95, 95)');
+		// only if space btwn tags is empty
+		$('li:empty').css('background-color', 'rgb(248, 95, 95)');
+		// only if within an h4 tag
+		$('li:has("h4")').css('background-color', 'rgb(248, 95, 95)');
+		// nth number elements (sub-menus)- index numbers start w/ 1 instead of 0; allows selection of child elements
+		$(li: nth - child(3)).css('background-color', 'rgb(248, 95, 95)');
+	}
+	
+	/*$('#alcoveLogo').next().css('background-color', 'rgba(255, 95, 95)');
+	$('.box1').nextAll().css('background-color', 'rgba(255, 0, 0, 0.2)');*/
+}

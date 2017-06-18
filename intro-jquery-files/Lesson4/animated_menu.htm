@@ -5,10 +5,22 @@
 	<title>Animated Menu</title>
 	<link rel="stylesheet" href="css/animatedMenu.css">
 	<script src="js/jquery-3.0.0.min.js"></script>
+	<script src="//code.jquery.com/jquery-3.0.0.min.js"></script>
 	<script>
-	$(function(){
-		// All jQuery code goes here
-
+		$(function(){
+		
+		$('.navigation > li').hover(function(){
+			// when mouse pointer over element
+			
+			$(this).addClass('openSesame');
+			
+		}, function(){
+			// when mouse removed
+			
+			$(this).removeClass('openSesame');
+			
+		})
+		
 	})
 	</script>
 </head>

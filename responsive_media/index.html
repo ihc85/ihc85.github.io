@@ -24,28 +24,27 @@
 		<main class="main">
 
 			<h1 class="main-title">Grand Canyon National Park</h1>
-
-			<figure class="featured-image">
 			<picture>
-				<source srcset="/weather/images/bridge_banner_400.jpeg 1000w, /weather/images/bridge_banner_600.jpeg 1500w">
-				<img src="" alt="Picture from the Grand Canyon">
-				</picture>
+				<source media="(max-width: 999px)" srcset="/images/bridge_banner_200.jpeg">
+				<source media="(min-width: 1000px)" srcset="/responsive-media/images/bridge_banner_400.jpeg">
+				<source media="(min-width: 1500px)" srcset="/responsive-media/images/bridge_banner_600.jpeg">
+				<img src="responsive-media/images/bridge_banner_400.jpeg" alt="Picture from the Grand Canyon">
+			</picture>
 
 				<figcaption class="image-caption">
 					Fun in the Grand Canyon
 				</figcaption>
-			</figure>
 
-			<figure class="featured-image">
 			<picture>
-				<source srcset="/weather/images/cactus_banner_200.jpeg 500w, /weather/images/bridge_banner_400.jpeg 1000w">
-				<img src="" alt="Picture from the Grand Canyon">
-				</picture>
+				<source media="(max-width: 999px)" srcset="/responsive-media/images/cactus_banner_200.jpg">
+				<source media="(min-width: 1000px)" srcset="/responsive-media/images/cactus_banner_400.jpg">
+				<source media="(min-width: 1500px)" srcset="/responsive-media/images/cactus_banner_600.jpg">
+				<img src="/responsive_media/images/cactus_banner_400.jpg" alt="Picture from the Grand Canyon">
+			</picture>
 
 				<figcaption class="image-caption">
 					Fun in the Grand Canyon
 				</figcaption>
-			</figure>
 			
 			
 			

@@ -1,8 +1,6 @@
 $(function () {
-	console.log( $('input[type="text"]').css('background-color'));
-	
 	toggleStyle = function() {
-		var inputFields = $('$('input[type="text"]').css('background-color')');
+		var inputFields = $('(input[type="text"]').css("background-color");
 		
 		if( $('input[type="text"]').css('background-color') === 'rgb(255, 0, 0)' ) {
 			// Set color to white

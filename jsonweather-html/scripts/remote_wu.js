@@ -23,9 +23,16 @@ $(function () {
   // Get the data from the wunderground API
   function getData(lat, long){
     $.ajax({
-		$.get("http://api.wunderground.com/api/0374d8d7218313b5/geolookup/q/" + lat + "," + long + ".json", function(data){
-		console.log(data);
-	}, "jsonp");
+		url : "http://api.wunderground.com/api/0374d8d7218313b5/geolookup/q/" + lat + "," + long + ".json",
+		dataType : "jsonp",
+  success : function(parsed_json) {
+  var location = parsed_json['location']['city'];
+  var temp_f = parsed_json['current_observation']['temp_f'];
+  $("#currentTemp").text("Current temperature in " + location + " is: " + temp_f);
+	  // HTML entity for degree symbol
+	  // HTML (.html(text)) method for drawing the symbol
+	  // temp_f must change whenever location changes
+	};
 
 		
 //		xhr.send();

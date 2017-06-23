@@ -28,7 +28,7 @@ $(function () {
 	}, "jsonp");
 
 		
-		xhr.send();
+//		xhr.send();
 
 
 

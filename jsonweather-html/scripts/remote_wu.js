@@ -23,17 +23,19 @@ $(function () {
   // Get the data from the wunderground API
   function getData(lat, long){
     $.ajax({
+		$.get("http://api.wunderground.com/api/0374d8d7218313b5/geolookup/q/" + lat + "," + long + ".json", function(data){
+		console.log(data);
+	});
 
-
-
-
+		var xhr = new XMLHttpRequest();
+		xhr.request
+		xhr.send();
 
 
 
       $("#cover").fadeOut(250);
-    }
-           });
-
+    });
+           }
   }
 
   // A function for changing a string to TitleCase

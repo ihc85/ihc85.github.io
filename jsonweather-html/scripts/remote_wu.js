@@ -25,10 +25,9 @@ $(function () {
     $.ajax({
 		$.get("http://api.wunderground.com/api/0374d8d7218313b5/geolookup/q/" + lat + "," + long + ".json", function(data){
 		console.log(data);
-	});
+	}, "jsonp");
 
-		var xhr = new XMLHttpRequest();
-		xhr.request
+		
 		xhr.send();
 
 

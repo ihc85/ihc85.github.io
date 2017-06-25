@@ -24,16 +24,14 @@ $(function () {
 	// Get the data from the wunderground API
 	function getData(lat, long) {
 		$.ajax({
-			url: "http://api.wunderground.com/api/0374d8d7218313b5/conditions/q/" + lat + "," + long + ".json",
+			url: "http://api.wunderground.com/api/0374d8d7218313b5/geolookup/conditions/q/" + lat + "," + long + ".json",
 			// Used to have the same as above, except requesting geolocation, not conditions
 			dataType: "jsonp",
 			success: function (parsed_json) {
-				var location = parsed_json['location']['city'];
+				var location = parsed_json['display_location']['city'];
 				var temp_f = parsed_json['current_observation']['temp_f'];
 				$("#currentTemp").text("Current temperature in " + location + " is: " + temp_f);
-				// HTML entity for degree symbol
-				//	  $("#summary").html(temp_f + "&#8457");
-				// temp_f must change whenever location changes
+				$("#summary").html(temp_f + "&#8457");
 				$("#cover").fadeOut(250);
 			}
 

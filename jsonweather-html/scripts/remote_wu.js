@@ -1,6 +1,6 @@
 // Current Location Scripts
 $(function () {
-
+	window.alert();
 	var status = $('#status');
 	$(document).ready(getGeoLocation);
 

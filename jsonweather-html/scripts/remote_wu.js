@@ -26,9 +26,9 @@ $(function () {
 		$.ajax({
 			url: "http://api.wunderground.com/api/0374d8d7218313b5/geolookup/q/" + lat + "," + long + ".json",
 			dataType: "jsonp",
-			success: function (data) {
-				var location = data['location']['city'];
-				var temp_f = data['current_observation']['temp_f'];
+			success: function (parsed_json) {
+				var location = parsed_json['location']['city'];
+				var temp_f = parsed_json['current_observation']['temp_f'];
 				$("#currentTemp").text("Current temperature in " + location + " is: " + temp_f);
 				// HTML entity for degree symbol
 				//	  $("#summary").html(temp_f + "&#8457");

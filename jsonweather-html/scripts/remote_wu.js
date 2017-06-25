@@ -33,6 +33,7 @@ $(function () {
 				// HTML entity for degree symbol
 				//	  $("#summary").html(temp_f + "&#8457");
 				// temp_f must change whenever location changes
+				$("#cover").fadeOut(250);
 			}
 
 
@@ -40,7 +41,6 @@ $(function () {
 
 
 
-			$("#cover").fadeOut(250);
 		});
 	}
 

@@ -2,8 +2,9 @@
 $(function () {
 
   var status = $('#status');
+	$(document).ready(getGeoLocation);
 
-  (function getGeoLocation() {
+  function getGeoLocation() {
     status.text('Getting Location...');
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function (position) {
@@ -18,19 +19,19 @@ $(function () {
       status.text("Your browser doesn't support Geolocation or it is not enabled!");
     }
 
-  })();
+  };
 
   // Get the data from the wunderground API
   function getData(lat, long){
     $.ajax({
 		url : "http://api.wunderground.com/api/0374d8d7218313b5/geolookup/q/" + lat + "," + long + ".json",
 		dataType : "jsonp",
-  success : function(parsed_json) {
-  var location = parsed_json['location']['city'];
-  var temp_f = parsed_json['current_observation']['temp_f'];
+  success : function(data) {
+  var location = data['location']['city'];
+  var temp_f = data['current_observation']['temp_f'];
   $("#currentTemp").text("Current temperature in " + location + " is: " + temp_f);
 	  // HTML entity for degree symbol
-	  // HTML (.html(text)) method for drawing the symbol
+//	  $("#summary").html(temp_f + "&#8457");
 	  // temp_f must change whenever location changes
 	};
 

@@ -38,9 +38,6 @@ $(function () {
 
 
 			//		xhr.send();
-
-
-
 		});
 	}
 

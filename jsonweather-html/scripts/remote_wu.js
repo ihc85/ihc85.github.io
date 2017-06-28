@@ -27,10 +27,11 @@ $(function () {
 			// Used to have the same as above, except requesting geolocation, not conditions
 			dataType: "jsonp",
 			success: function (parsed_json) {
-				var location = parsed_json['location']['city'];
+				var location = parsed_json['location']['city'] + ", " + parsed_json['location']['state'];
 				var temp_f = parsed_json['current_observation']['temp_f'];
 				$("#currentTemp").text("Current temperature in " + location + " is: " + temp_f);
 				$("#summary").html(temp_f + "&#8457");
+				$("#summary").text(toTitleCase(parsed_json.current_observation.icon));
 				$("#cover").fadeOut(250);
 				console.log(parsed_json);
 			}

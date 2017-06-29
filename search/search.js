@@ -1,4 +1,4 @@
-jQuery('#query').keyup(function () {
+$('#query').keyup(function () {
 	var value = $('#query').val();
 	var rExp = new RegExp(value, "i");
 	// How do I go from document.write("//autocomplete.wunderground. ... .Search") to <ol><li> ... </li></ol>

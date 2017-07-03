@@ -1,0 +1,217 @@
+
+* {
+	box-sizing: border-box;
+	/* changes width property
+ to total width instead of content width */
+	list-style: none;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+	display: block;
+	/* just in case we have
+any older browsers that don't recognize
+the HTML5 semantic elements */
+}
+
+body {
+	margin: 0;
+	/* remove any margin from body */
+	padding: 0;
+	/* ditto for padding */
+	background-color: salmon;
+	font-size: 20px;
+	/* Changed background color and font size */
+}
+
+header {
+	/* Make the header stretch to fit the viewport */
+	display: flex;
+	flex: 1 100%;
+}
+
+main {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	/* create flexbox and center align elements*/
+}
+
+nav ul {
+	display: flex;
+	padding: 0px;
+	list-style-type: none;
+	/* Create flexbox, remove padding for list items, and remove bullets */
+}
+
+nav {
+	position: fixed;
+	line-height: 20px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	justify-content: space-around;
+	font-size: 20px;
+	/* Make the position of the nav bar fixed, specify line height, stretch to width of viewport, and justify links content for even spacing */
+}
+
+.title h1+h1 {
+	text-align: right;
+	margin-top: -.7em;
+	/* right justify "Local Weather" heading and move it closer to "Feeling Lucky?" */
+}
+
+.title {
+	background-color: #A6D8DB;
+	width: auto;
+}
+
+footer {
+	margin-bottom: 40px;
+	/* add space below footer to make room for nav bar */
+	font-size: 20px;
+}
+
+.cur_conditions {
+	display: flex;
+	flex-direction: row;
+	flex-flow: wrap;
+	/* flexbox current conditions in row format, with wrapping text */
+}
+
+.overview article {
+	display: flex;
+	flex-direction: row;
+	/* current conditions text box flowing left to right */
+}
+
+.overview article div {
+	display: flex;
+	flex-direction: row;
+	/* make it so the icon and the high/low flow left to right */
+}
+
+#temp {
+	justify-content: center;
+	margin: auto;
+	/* make the temperature in the center, fitting to the size of the current conditions box */
+}
+
+#icon {
+	justify-content: flex-start;
+	/* left-align current conditions icon */
+}
+
+#hi-low {
+	justify-content: flex-end;
+	/* right-align hi/low temps */
+}
+
+.hourly {
+	display: none;
+	/* hide hourly content */
+}
+
+.left {
+	text-align: right;
+	/* Right-align "Wind:" and "Precipitation:" */
+}
+
+#summary {
+	display: none;
+	/* Hide summary text in current conditions */
+}
+
+main {
+	display: flex;
+	font-family: 'Arial', 'Helvetica', sans-serif;
+	/* Changing font of main element */
+}
+/*
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Sansita', sans-serif;
+	 Changing font of headings 
+}
+*/
+
+.title {
+	width: 280px;
+	font-size: 10px;
+}
+
+main {
+	display: flex;
+	max-height: 500px;
+	align-items: stretch;
+}
+
+li a:link {
+	text-decoration: none;
+	color: #47556F;
+}
+
+li a:visited {
+	text-decoration: none;
+	color: #47556F;
+}
+
+li a:hover {
+	text-decoration: none;
+	color: #E7EF61;
+}
+
+li a:active {
+	text-decoration: none;
+	color: #A6D8DB;
+}
+
+#icon2 {
+	transform: rotate(25deg);
+	display: inline-block;
+}
+
+footer {
+	position: fixed;
+	bottom: 10px;
+	font-size: 15px;
+}
+
+@media screen and (min-width: 500px) {
+	.hourly {
+	display: block;
+	/* show hourly content */
+	}
+	
+		.title {
+			font-size: 15px;
+		}
+	
+	main {
+		flex-flow: row;
+		height: auto;
+		margin: 5px;
+		height: 500px;
+	}
+	
+	small {
+		font-size: 10px;
+		align-self: flex-end;
+	}
+	
+	nav ul {
+	display: flex;
+	justify-content: space-around;	
+	}

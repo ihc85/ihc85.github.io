@@ -1,11 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+
+* {
+	box-sizing: border-box;
+	/* changes width property
+ to total width instead of content width */
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+	display: block;
+	/* just in case we have
+any older browsers that don't recognize
+the HTML5 semantic elements */
+}
+
 #query:selection {
 	color: lawngreen;
 }
 
-#directions {
-	
+body {
+	margin: 0;
+	/* remove any margin from body */
+	padding: 0;
+	/* ditto for padding */
+	background-color: salmon;
+	font-size: 20px;
+	/* Changed background color and font size */
 }
 
-form:before {
-	
+header {
+	/* Make the header stretch to fit the viewport */
+	display: flex;
+	flex: 1 100%;
+}
+
+header div {
+	font-family: sansita;
 }

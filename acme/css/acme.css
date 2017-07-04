@@ -1,0 +1,63 @@
+/*
+	Blue: #
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+
+/*
+* {
+	box-sizing: border-box;
+	 /* changes width property
+ to total width instead of content width *slash
+}
+*/
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+	display: block;
+	color: aqua;
+	/* just in case we have
+any older browsers that don't recognize
+the HTML5 semantic elements */
+}
+
+body {
+	background-image: image("/site/background.jpg");
+	background-color: #ffffff;
+	font-size: 20px;
+}
+
+main {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+nav ul {
+	display: flex;
+	padding: 0px;
+	list-style-type: none;
+	/* Create flexbox, remove padding for list items, and remove bullets */
+}
+
+nav {
+	position: fixed;
+	line-height: 20px;
+	bottom: 50px;
+	left: 0;
+	right: 0;
+	justify-content: space-around;
+	font-size: 20px;
+	/* Make the position of the nav bar fixed, specify line height, stretch to width of viewport, and justify links content for even spacing */
+}
+
+@media screen and (min-width: 44em) {
+	
+}

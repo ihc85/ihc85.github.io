@@ -23,7 +23,7 @@ $('#query').keyup(function() {
 
 $("#searchResults").on("click", "a", function (evt) {
     evt.preventDefault();
-    $();
+    $()
     // With the text value get the needed value from the weather.json file
     var jsonCity = $(this).text(); // Franklin, etc...
     console.log(jsonCity);
@@ -38,8 +38,10 @@ function getData(city, state){
         url:"https://api.wunderground.com/api/92b3fba24d61b77b/geolookup/conditions/q/" + city + "," + state + ".json",
         dataType : "jsonp",
         success : function(parsed_json) {
-            var location = parsed_json['location']['city'];
-            var temp_f = parsed_json['current_observation']['temp_f'];
+            var location = parsed_json.location.city;
+			console.log(location);
+            var temp_f = parsed_json.current_observation.temp_f;
+			console.log(temp_f);
             $('#currentTemp').html(Math.round(temp_f) +  " &#8457" );
 
             $("title").text(parsed_json.current_observation.display_location.full);

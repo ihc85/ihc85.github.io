@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,34 +6,18 @@
 	<title>Weather Site Search Tool</title>
 	<meta description="Weather site search tool">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-	<meta name="viewport" content="width=320, initial-scale=1">
-	<link rel="stylesheet" type="text/css"
-		  href="search.css">
-	</head>
+	<!--	<meta name="viewport" content="width=320, initial-scale=1">-->
+	<link rel="stylesheet" type="text/css" href="search.css">
+</head>
 
 <body>
 	<header>
-	<div class="title">
+		<div class="title">
 			<h1><span id="icon1">&#9856;</span><span id="icon2">&#9861;</span> Feeling Lucky?</h1>
 			<h1>Local Weather</h1>
 		</div>
 
 	</header>
-	<form method="get" action="//autocomplete.wunderground.com/aq" id="srchfrm">
-		<input type="search" name="query" id="query">
-		<input type="submit" name="submit" value="Search" id="send">
-	</form>
-	<section id="searchResults">
-		<h2>Search Results</h2>
-		<ul>
-			<li id="currentTemp"></li>
-			<li id="cityDisplay"></li>
-			<li id="summary"></li>
-			<li id="add1"></li>
-			<li id="add2"></li>
-			<li id="add3"></li>
-		</ul>
-	</section>
 	<nav>
 		<ul>
 			<li><a href="/index.html">Home</a></li>
@@ -45,7 +29,28 @@
 			<li><a href="search.html">Search</a></li>
 		</ul>
 	</nav>
-	<div id="directions"></div>
+	<main>
+		<form method="get" action="//autocomplete.wunderground.com/aq" id="srchfrm">
+			<input type="search" name="query" id="query">
+			<input type="submit" name="submit" value="Search" id="send">
+		</form>
+		<section id="display-weather">
+			<h1 id="cityDisplay"></h1>
+			<ul>
+				<li id="currentTemp"></li>
+				<li id="cityDisplay"></li>
+				<li id="summary"></li>
+				<li id="add1"></li>
+				<li id="add2"></li>
+				<li id="add3"></li>
+			</ul>
+		</section>
+		<section id="searchResults">
+			<h2>Search Results</h2>
+		</section>
+
+		<div id="directions"></div>
+	</main>
 	<footer id="page-footer">
 		<ul class="flexlist">
 			<li>Weather Center 2010 - 2016</li>
@@ -53,7 +58,7 @@
 			<li><small>Last updated: </small></li>
 		</ul>
 		<small>&copy; Copyright</small>
-			<a href="ihc85.github.io">Link to Homepage</a>
+		<a href="ihc85.github.io">Link to Homepage</a>
 	</footer>
 </body>
 <script src="search.js"></script>

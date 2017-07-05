@@ -42,7 +42,7 @@ main {
 
 nav ul {
 	display: flex;
-	padding: 0px;
+	padding: 10px;
 	list-style-type: none;
 	/* Create flexbox, remove padding for list items, and remove bullets */
 }
@@ -50,12 +50,17 @@ nav ul {
 nav {
 	position: fixed;
 	line-height: 20px;
-	bottom: 50px;
 	left: 0;
 	right: 0;
 	justify-content: space-around;
 	font-size: 20px;
+	background-color: #de2226;
 	/* Make the position of the nav bar fixed, specify line height, stretch to width of viewport, and justify links content for even spacing */
+}
+
+small {
+	display: flex;
+	justify-content: center;
 }
 
 @media screen and (min-width: 44em) {

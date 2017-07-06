@@ -4,15 +4,13 @@
 
 @import url('https://fonts.googleapis.com/css?family=Sansita');
 
-
+/*
 * {
 	box-sizing: border-box;
-/*
-	  changes width property
- to total width instead of content width
-*/
+	 /* changes width property
+ to total width instead of content width *slash
 }
-
+*/
 
 article,
 aside,
@@ -27,27 +25,17 @@ figure {
 	/* just in case we have
 any older browsers that don't recognize
 the HTML5 semantic elements */
-	background-color: white;
-}
-
-img {
-	width:35%;
 }
 
 body {
-/*
 	border-style: solid;
-	border-width: large;
-	border-top-width: thin;
-*/
-	background-image: url(/acme/images/site/background.jpg);
-	background-color: white;
-/*
-	border-top: 0;
+	border-width: medium;
+	border-image: url(/acme/images/site/background.jpg) 50;
+	background-color: rgba(1,1,1,1.0);
+	
 	font-size: 20px;
 	margin: 10px;
 	margin-top: 0;
-*/
 }
 
 main {
@@ -86,7 +74,6 @@ h1 {
 
 footer {
 	border-top: 10px black solid;
-	margin-left: .5%;
 /*
 	border-top-color: black;
 	border-top-style: dotted

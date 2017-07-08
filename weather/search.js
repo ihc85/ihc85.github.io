@@ -27,6 +27,7 @@ $('#searchResults').on("click", "a", function(evt) {
 	var jsonCity = $(this).text();
 	console.log(jsonCity);
 	var index = $(this).index("a");
+	console.log(index);
 //		console.log(sessionStorage.getItem('cityData'));
 //	getData(cityData.RESULTS[index].zmw);
 getData(index.lat, index.lon);

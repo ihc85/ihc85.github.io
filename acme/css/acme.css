@@ -4,7 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Sansita');
 
-
 * {
 	box-sizing: border-box;
 /*
@@ -63,14 +62,13 @@ a {
 
 nav ul {
 	display: flex;
-	padding: 10px;
+	padding: 0px;
 	list-style-type: none;
 	justify-content: space-around;
 	/* Create flexbox, remove padding for list items, and remove bullets */
 }
 
 nav {
-	position: fixed;
 	line-height: 20px;
 	left: 0;
 	right: 0;
@@ -78,6 +76,25 @@ nav {
 	font-size: 20px;
 	background-color: #de2226;
 	/* Make the position of the nav bar fixed, specify line height, stretch to width of viewport, and justify links content for even spacing */
+}
+
+#homeContent {
+	display: flex;
+	flex-flow: column;
+	align-content: flex-end;
+}
+
+#hero {
+	display: flex;
+	flex-flow: row;
+	align-content: flex-end;
+	background-image: url(/acme/images/site/feature.jpg);
+	background-size: cover;
+	list-style-type: none;
+}
+
+#features {
+	list-style-type: none;
 }
 
 h1 {

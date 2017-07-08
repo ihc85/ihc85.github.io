@@ -62,7 +62,7 @@ a {
 
 nav ul {
 	display: flex;
-	padding: 0px;
+	padding: 10px;
 	list-style-type: none;
 	justify-content: space-around;
 	/* Create flexbox, remove padding for list items, and remove bullets */

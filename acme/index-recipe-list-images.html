@@ -1,5 +1,3 @@
-<!--See index-div.html for most recent version-->
-
 <!doctype html>
 <html lang="en">
 	<head>
@@ -16,12 +14,12 @@
 	<nav>
 		<ul id="nav">
 			<li>
-				<label id="link1">Home</label>
+				<a id="link1">Home</a>
 			</li>
-			<li><label id="link2">Anvils</label></li>
-			<li><label id="link3">Explosives</label></li>
-			<li><label id="link4">Decoys</label></li>
-			<li><label id="link5">Traps</label></li>
+			<li><a id="link2">Anvils</a></li>
+			<li><a id="link3">Explosives</a></li>
+			<li><a id="link4">Decoys</a></li>
+			<li><a id="link5">Traps</a></li>
 		</ul>
 	</nav>
 	<main>
@@ -50,14 +48,13 @@
           
 <!--Recipe Text-->
 			<section id="recipes">
-				<h2>Featured Recipes</h2>
-<ul>			
-	<li><figure><img alt="Picture of Pulled Roadrunner BBQ" src="/acme/images/recipes/bbqsand.jpg"></figure><figcaption><a href="#" title="Pulled Roadrunner BBQ Recipe">Pulled Roadrunner BBQ</a></figcaption></li>
+				<h2>Featured Recipes</h2>	<figure id="pulled-bbq">	
+				<img  alt="Picture of Pulled Roadrunner BBQ" src="/acme/images/recipes/bbqsand.jpg"></figure><figcaption class="pulled-bbq"><a href="#" title="Pulled Roadrunner BBQ Recipe">Pulled Roadrunner BBQ</a></figcaption>
 <!--	<li><img alt="Picture of Pulled Roadrunner BBQ" src="/acme/images/recipes/bbqsand.jpg"><a href="#" title="Pulled Roadrunner BBQ Recipe">Pulled Roadrunner BBQ</a></figcaption></li>-->
-	<li class="img-list"><img alt="Picture of Roadrunner Pot Pie" src="/acme/images/recipes/potpie.jpg"></li><li class="link-list"><a href="#" title="Roadrunner Pot Pie Recipe">Roadrunner Pot Pie</a></li>
-	<li class="img-list"><img src="/acme/images/recipes/soup.jpg" alt="Picture of Soup"></li><li class="link-list"><a href="#" title="Roadrunner Soup Recipe">Roadrunner Soup</a></li>
-	<li><img src="/acme/images/recipes/taco.jpg" alt="Picture of Tacos"><a href="#" title="Roadrunner Taco Recipe">Roadrunner Tacos</a></li>
-			</ul>
+				<figure class="pot-pie"><img alt="Picture of Roadrunner Pot Pie" src="/acme/images/recipes/potpie.jpg"></figure><figcaption class="pot-pie"><a href="#" title="Roadrunner Pot Pie Recipe">Roadrunner Pot Pie</a></figcaption>
+				<figure class="img-list"><img src="/acme/images/recipes/soup.jpg" alt="Picture of Soup"></figure><figcaption class="link-list"><a href="#" title="Roadrunner Soup Recipe">Roadrunner Soup</a></figcaption>
+	<figure class="img-list"><img src="/acme/images/recipes/taco.jpg" alt="Picture of Tacos"></figure><figcaption class="link-list"><a href="#" title="Roadrunner Taco Recipe">Roadrunner Tacos</a>
+				</figcaption>
 			</section>
 		</section>
 		<section id="productContent">
@@ -67,7 +64,7 @@
 			Reviews:<label id="reviews"></label>
 			</p>
 			<p id="price">Price:</p>
-		</section>
+			</section>
 	</main>
 	<footer>
 		<small>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CSS Transform</title>
+		<meta description="Transform Events">
+	</head>
+	<style>
+		#sq {
+			height: 50px;
+			width: 50px;
+			background-color: aliceblue;
+			transform: rotate(10deg);
+			margin-bottom: 50px;
+		}
+		
+		#rect {
+			height: 50px;
+			width: 100px;
+			margin-bottom: 10px;
+			background-color: aqua;
+		}
+		
+		#rect2 {
+			height: 50px;
+			width: 100px;
+			margin-bottom: 10px;
+			transform: scale(1.5);
+			background-color: aqua;
+		}
+		
+		#shape {
+			height: 200px;
+			width: 300px;
+			transform: skewX(20deg);
+			float: left;
+			clear: left;
+			background-color: darkmagenta;
+		}
+	</style>
+	
+	<body>
+		<p id="sq">Rotated square</p>
+		
+		<p id="rect2">Big rectangle</p>
+		<p id="shape">Parallelogram</p>
+		<script type="text/javascript">
+			function event() {
+				document.getElementById("i").innerHTML = "hi";
+			}
+		</script>
+	</body>
+</html>

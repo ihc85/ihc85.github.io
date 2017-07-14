@@ -60,7 +60,7 @@ $('#nav-bar').on("click", "a", function(evt) {
 				} else {
 					newPage(page);
 				}
-//			}
+			}
 			function newPage(page) {
 				document.getElementById("name").innerHTML = data.pages[page].name;
 				document.getElementById("picture").src = data.pages[page].path;
@@ -71,4 +71,4 @@ $('#nav-bar').on("click", "a", function(evt) {
 			}
 			});
 //$.post("https://ihc85.github.io/acme/js/acme.json",)
-}
+	}

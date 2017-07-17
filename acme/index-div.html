@@ -5,22 +5,21 @@
 	<title>Acme Home Page</title>
 	<meta description="A site for all your roadrunner needs">
 	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" type="text/css" href="/acme/css/acme.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="https://ihc85.github.io/acme/css/acme.css" media="screen">
 </head>
 
 <body>
 	<header>
 		<img src="https://ihc85.github.io/acme/images/site/logo.png" alt="Acme Logo"></header>
-<!--	href attributes throwing everything off-->
 	<nav id="nav-bar">
 		<ul id="nav">
 			<li>
-				<a class="links" href="#" id="link1">Home</a>
+				<a href="index-div.html" id="link1"></a>
 			</li>
-			<li><a class="links"  href="#" id="link2">Anvils</a></li>
-			<li><a class="links"  href="#" id="link3">Explosives</a></li>
-			<li><a class="links" href="#" id="link4">Decoys</a></li>
-			<li><a class="links" href="#" id="link5">Traps</a></li>
+			<li><a href="/acme/products/anvils.html" id="link2"></a></li>
+			<li><a href="/acme/products/explosives.html" id="link3"></a></li>
+			<li><a href="/acme/products/decoys.html" id="link4"></a></li>
+			<li><a href="/acme/products/traps.html" id="link5"></a></li>
 		</ul>
 	</nav>
 	<main>
@@ -36,7 +35,7 @@
     <li><a href="#"><img id="actionbtn" alt="Add to cart button" src="/acme/images/site/iwantit.gif"></a></li>
   </ul>
 			</article>
-
+<div id="reviews_and_recipes">
 <!--Hero Product Review text-->
 			<h2>Acme Rocket Reviews</h2>
   <ul>
@@ -57,15 +56,20 @@
 				<div class="img-list"><figure><img id='food' src="/acme/images/recipes/soup.jpg" alt="Picture of Soup"></figure><div class="link-list"><a href="#" title="Roadrunner Soup Recipe">Roadrunner Soup</a></div></div>
 	<div><figure><img id='food' src="/acme/images/recipes/taco.jpg" alt="Picture of Tacos"></figure><div><figcaption><a href="#" title="Roadrunner Taco Recipe">Roadrunner Tacos</a></figcaption></div></div>
 			</section>
+	</div>
 		</section>
 		<section id="productContent">
-			<h1 id="name">Name</h1>
-			<img id="picture">
-			<p id="lbl">Made by:<label id="producer"></label>
-			<p id="lbl">Made by:<label id="producer"></label>
-			Reviews:<label id="reviews"></label>
+			<h1 id="name"></h1>
+	<article id="productDiv">
+			<figure id="productFigure">
+				<img id="picture">
+			</figure>
+			<figcaption id="prod_desc"></figcaption>
+			<p id="lbl">Made by: <label id="producer"></label>
+			Reviews: <label id="reviews">/5 Stars</label>
 			</p>
-			<p id="price">Price:</p>
+			<p id="price">Price: $</p>
+	</article>
 		</section>
 	</main>
 	<footer>
@@ -75,6 +79,6 @@ All images used are believed to be in "Fair Use". Please notify the author if an
 			</small>
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-	<script src="/acme/js/acme.js"></script>
+	<script src="https://ihc85.github.io/acme/js/acme.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-{"pages": [
+{
     "Anvils":{
       "name": "Anvil",
       "path": "/acme/images/products/anvil.png",
@@ -30,7 +30,7 @@
       "manufacturer": "Traps R Us",
       "price": "20.00",
       "reviews": "4.6"
-    }],
+    },
 	"Nav":{
 		"link1": "Home",
 		"link2": "Anvils",

@@ -22,10 +22,12 @@ section,
 main,
 figcaption,
 figure {
+/*
 	display: block;
-	/* just in case we have
+	 /*just in case we have
 any older browsers that don't recognize
-the HTML5 semantic elements */
+the HTML5 semantic elements 
+*/
 	background-color: white;
 }
 
@@ -44,11 +46,6 @@ body {
 	margin: 10px;
 	margin-top: 0;
 */
-}
-
-section header {
-	font-size: 20px;
-	font-weight: 200;
 }
 
 main {
@@ -83,13 +80,6 @@ nav {
 	color: white;
 }
 
-#homeContent {
-	display: flex;
-	flex-flow: column;
-	align-content: flex-end;
-	
-}
-
 #hero {
 	display: flex;
 /*	should it be column-reverse?  That might make it so that the elements are on the other side of the container*/
@@ -100,47 +90,6 @@ nav {
 	list-style-type: none;
 	position: relative;
 }
-
-#features {
-	list-style-type: none;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: flex-end;
-/*	position: absolute;*/
-			Width: 50%;
-			Height: 100;
-			Right: 0;
-			Top: 0;
-	color: red; 
-}
-
-#features img {
-	width: 50%;
-}
-
-h2 {
-	width: 100%;
-}
-
-#recipes {
-	display: inline-flex;
-	flex-wrap: wrap;
-/*
-	display: flex;
-	flex-flow: column wrap;
-*/
-	background-size: contain;
-	width: 50%;
-}
-
-#food {
-	width: auto;
-	padding: 1em;
-	
-}
-
-
-
 
 figure img {
 	width: 100px;

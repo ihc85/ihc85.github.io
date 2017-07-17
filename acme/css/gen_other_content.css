@@ -37,6 +37,7 @@ body {
 	border-width: large;
 	border-top-width: thin;
 */
+	height: 1000px;
 	background-image: url(/acme/images/site/background.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -86,7 +87,7 @@ nav {
 	align-content: flex-end;
 	justify-content: flex-end;
 	background-image: url(/acme/images/site/feature.jpg);
-	background-size: cover;
+/*	background-size: cover;*/
 	list-style-type: none;
 	position: relative;
 }
@@ -115,9 +116,6 @@ small p {
 }
 
 @media screen and (min-width: 500px) {
-	#recipes {
-	width: 50%;
-	}
 }
 
 /*
@@ -167,10 +165,6 @@ small p {
 
 #prod_desc {
 	width: 40%;
-}
-
-#producer, #reviews {
-	font-weight: 100;
 }
 
 #productDiv {
